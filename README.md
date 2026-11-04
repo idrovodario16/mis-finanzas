@@ -1,5 +1,8 @@
 # Mis finanzas
 
+[**Abrir demo pública →**](https://idrovodario16.github.io/mis-finanzas/)
+
+
 **Resumen técnico:** aplicación de ingresos, gastos y metas de ahorro en TypeScript, React y Tailwind CSS. Arquitectura web full stack con Vinext, rutas API, validación Zod y persistencia mediante Drizzle ORM en Cloudflare D1 (SQLite), ejecutada en Cloudflare Workers. El despliegue original utiliza autenticación administrada; la identidad local de prueba es solo para desarrollo.
 
 **Ingresos, gastos y metas de ahorro en un dashboard personal.**
@@ -78,7 +81,7 @@ Este repositorio conserva el código de la aplicación alojada y su integración
 
 El despliegue original usa autenticación y una base D1 administradas por Sites. Para alojar en un servidor propio hay que adaptar autenticación, persistencia y lista de orígenes autorizados en ambas rutas API. No es una aplicación Laravel/Node/MySQL lista para desplegar sin cambios.
 
-Los encabezados de identidad que usa el adaptador solo son fiables detrás de un proxy de autenticación que los valide y elimine los encabezados aportados por el cliente. La identidad simulada es exclusivamente para desarrollo local. Mantén cualquier despliegue remoto privado; no publiques ni amplíes su acceso sin autorización.
+Los encabezados de identidad que usa el adaptador solo son fiables detrás de un proxy de autenticación que los valide y elimine los encabezados aportados por el cliente. La identidad simulada es exclusivamente para desarrollo local. Este requisito aplica a la aplicación original con identidad y D1. La demo pública separada de `demo/` usa únicamente datos ficticios y localStorage, sin acceso al despliegue personal.
 
 Las licencias de las dependencias y de los archivos de terceros se conservan en sus archivos correspondientes.
 
@@ -91,7 +94,7 @@ Las licencias de las dependencias y de los archivos de terceros se conservan en 
 
 Versión pública adaptada de la interfaz original: ingresos, gastos, metas y CSV con datos ficticios. Los cambios se guardan solo en localStorage; no usa autenticación, APIs remotas, D1 ni datos de la aplicación personal. Permite restablecer la muestra.
 
-**Publicación:** archivos y flujo de despliegue preparados. La URL prevista es https://idrovodario16.github.io/mis-finanzas/; solo estará disponible cuando GitHub Pages esté activado y el despliegue termine correctamente.
+**Demo pública:** [Abrir Mis finanzas](https://idrovodario16.github.io/mis-finanzas/). Publicada en GitHub Pages mediante GitHub Actions.
 
 Para activarla: **Settings → Pages → Build and deployment → Source: GitHub Actions**. Después ejecuta **Actions → Publicar demo en GitHub Pages → Run workflow**. Los cambios posteriores en `main` vuelven a desplegar automáticamente.
 
