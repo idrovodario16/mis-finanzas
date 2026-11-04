@@ -1,5 +1,7 @@
 # Mis finanzas
 
+**Resumen técnico:** aplicación de ingresos, gastos y metas de ahorro en TypeScript, React y Tailwind CSS. Arquitectura web full stack con Vinext, rutas API, validación Zod y persistencia mediante Drizzle ORM en Cloudflare D1 (SQLite), ejecutada en Cloudflare Workers. El despliegue original utiliza autenticación administrada; la identidad local de prueba es solo para desarrollo.
+
 **Ingresos, gastos y metas de ahorro en un dashboard personal.**
 
 Aplicación en español para registrar movimientos, consultar información mensual y separar los ahorros del saldo disponible. Proyecto de portafolio de **Darío Idrovo**.
