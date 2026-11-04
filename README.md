@@ -31,7 +31,7 @@ El saldo disponible se calcula como **ingresos − gastos − ahorros registrado
 
 - Node.js 22.13 o superior.
 - pnpm 11.25.0 (versión declarada en `package.json`).
-- Acceso al repositorio privado.
+- Acceso al repositorio público.
 
 ```bash
 git clone https://github.com/idrovodario16/mis-finanzas.git
@@ -85,3 +85,14 @@ Las licencias de las dependencias y de los archivos de terceros se conservan en 
 ## Autor
 
 [Darío Idrovo](https://github.com/idrovodario16)
+
+
+## Demo para GitHub Pages
+
+Versión pública adaptada de la interfaz original: ingresos, gastos, metas y CSV con datos ficticios. Los cambios se guardan solo en localStorage; no usa autenticación, APIs remotas, D1 ni datos de la aplicación personal. Permite restablecer la muestra.
+
+**Publicación:** archivos y flujo de despliegue preparados. La URL prevista es https://idrovodario16.github.io/mis-finanzas/; solo estará disponible cuando GitHub Pages esté activado y el despliegue termine correctamente.
+
+Para activarla: **Settings → Pages → Build and deployment → Source: GitHub Actions**. Después ejecuta **Actions → Publicar demo en GitHub Pages → Run workflow**. Los cambios posteriores en `main` vuelven a desplegar automáticamente.
+
+Para compilar la demo por separado: `cd demo`, `npm ci`, `npm run build`. El resultado queda en `demo/dist/`.
