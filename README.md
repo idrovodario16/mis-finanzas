@@ -1,13 +1,19 @@
 # Mis finanzas
 
-[**Abrir demo pública →**](https://idrovodario16.github.io/mis-finanzas/)
+Aplicación para registrar ingresos, gastos y aportes de ahorro, consultar un dashboard mensual y dar seguimiento a metas.
 
+**Stack:** React, TypeScript, Tailwind CSS, Vinext, Drizzle ORM y Cloudflare D1.
 
-**Resumen técnico:** aplicación de ingresos, gastos y metas de ahorro en TypeScript, React y Tailwind CSS. Arquitectura web full stack con Vinext, rutas API, validación Zod y persistencia mediante Drizzle ORM en Cloudflare D1 (SQLite), ejecutada en Cloudflare Workers. El despliegue original utiliza autenticación administrada; la identidad local de prueba es solo para desarrollo.
+**Estado:** dos modos en este repositorio: demo pública con localStorage y aplicación full stack con identidad y D1. La demo no accede a los datos personales del despliegue original.
 
-**Ingresos, gastos y metas de ahorro en un dashboard personal.**
+[Demo web](https://idrovodario16.github.io/mis-finanzas/)
 
-Aplicación en español para registrar movimientos, consultar información mensual y separar los ahorros del saldo disponible. Proyecto de portafolio de **Darío Idrovo**.
+## Modos de ejecución
+
+| Modo | Datos | Ejecución |
+| --- | --- | --- |
+| Demo pública | Muestra y localStorage | `cd demo`, `npm ci`, `npm exec vite -- --host 127.0.0.1` |
+| Aplicación full stack | Identidad de desarrollo y D1 local | Guía de requisitos y ejecución local de este README |
 
 ## Funcionalidades
 
@@ -96,6 +102,5 @@ Versión pública adaptada de la interfaz original: ingresos, gastos, metas y CS
 
 **Demo pública:** [Abrir Mis finanzas](https://idrovodario16.github.io/mis-finanzas/). Publicada en GitHub Pages mediante GitHub Actions.
 
-Para activarla: **Settings → Pages → Build and deployment → Source: GitHub Actions**. Después ejecuta **Actions → Publicar demo en GitHub Pages → Run workflow**. Los cambios posteriores en `main` vuelven a desplegar automáticamente.
 
 Para compilar la demo por separado: `cd demo`, `npm ci`, `npm run build`. El resultado queda en `demo/dist/`.
